@@ -1,0 +1,6 @@
+<?php
+echo"NoteSpace:<br/>";
+echo"attention:no only the boolean can be \"false\", in some special condition the other type of variables can be \"false\", too. These special condition is : 0, 0.0, \"0\", blank string(\"\"), array only declare without initialize";
+echo"QuestionSpaces<br/>";
+echo"line 4 in ch_04.php:$boo only display '1' on the screen"
+?>

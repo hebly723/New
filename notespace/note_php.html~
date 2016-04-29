@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PHP_NOTE</title>
+<link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+</head>
+<h1>NoteSpace</h1>
+<ul>
+<li><h2>attention</h2></li>
+<p class="tips">
+no only the boolean can be "false", in some special condition the other type of variables can be "false", too. These special condition is : 0, 0.0, "0", blank string(""), array only declare without initialize";
+</p>
+<li><h2>unset</h2></li>
+<p class="tips">
+destory one element from the array: unset($array[1]);
+</p>
+<li><h2>foreach</h2></li>
+<p class="tips">
+overwhole elements! like that
+$array = array(1, 2 ,3);
+foreach($array as $element){
+  echo $element;
+}
+</p>
+<li><h2>endwhile/endswitch</h2></li>
+<p class="tips">
+switch(){}switch():endswitch;while(){}while():endwhile;
+</p>
+<li><h2>String function<h2></li>
+<ul>
+<li>strlen</li>
+<li>substr</li>
+<li>strtoupper</li>
+<li>strtolower</li>
+</ul>
+</ul>
+<h1>QuestionSpaces</h1>
+<p class="tips">
+line 4 in ch_04.php:$boo only display '1' on the screen
+</p>
+</html>
