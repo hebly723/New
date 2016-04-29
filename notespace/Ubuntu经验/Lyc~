@@ -2,3 +2,4 @@ osdlyrics下载地址:
 https://launchpadlibrarian.net/106924547/osdlyrics_0.4.3-1~precise1_i386.deb
 下完后用ubuntu软件中心打开就能安装了
 安装完后在主面板中搜索，默认在第一个会显示,点开
+若点不开，在计算机里搜索osd，看到图标后双击,或者拖到桌面上，在跳出的选项中勾选“记住我的选择”并点击Rymbox这样以后在桌面上打开osd就会自动打开rymbox了,修改配置的话可以在打开后的首选项里修改。
