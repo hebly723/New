@@ -33,6 +33,7 @@ switch(){}switch():endswitch;while(){}while():endwhile;
 <li>substr</li>
 <li>strtoupper</li>
 <li>strtolower</li>
+<li>strpos</li>
 </ul>
 </ul>
 <h1>QuestionSpaces</h1>
