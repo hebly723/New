@@ -1,0 +1,36 @@
+建立数据库
+create database Student;
+建立表
+use Student;
+create table Student;
+插入一列
+alter table Student add column score varchar(40) not null;
+删除一行
+alter table Student drop column score;
+修改单值
+update Student set score = 50 where Snumber not like '';
+更名查询
+select S# as DB where ...(显示出的表的对应S#的表头会变成DB)
+模糊查询
+select S# where Sname like '%'(任意字符)
+select S# where Sname like '_'(单个字符)
+select S# where Sname like '\%'(出现%)
+结果排序
+select S# where Sname like 'x%' order by S# asc;(按S#的从小到大排序)
+select S# where Sname like 'x%' order by S# desc;(按S#的从大到小排序)
+重复元组
+select distinct Sage from Student where score > 50;(出来的结果是不重复的Sage)
+插入数据
+insert into Teacher values( '1143710514', 'zhangahojin', '21', 'da', '62');
+改变列顺序
+ alter table Teacher modify score varchar(03) after grade;
+多表联合检索
+select Teacher.Sname as ageT, Student.Sname as ageS from Teacher, Student where Teacher.Sname like '%jin' and Student.Sname like '%jin';
+插入主键
+alter table Teacher add constraint PK_Teacher primary key(Snumber);
+all谓词
+ select Teacher.Snumber as 'T#', Teacher.score as 'Ts' from Teacher where Teacher.score <= all(select score from Teacher);
+in谓词
+select Teacher.Snumber as 'T#', Teacher.score as 'Ts', Student.Snumber as 'S#',Student.score as 'Ss' from Student, Teacher where Student.score in (select Student.score from Student where Student.score > Teacher.score) order by Teacher.Snumber asc;
+改变属性
+alter table Student modify score varchar(20) not null;
